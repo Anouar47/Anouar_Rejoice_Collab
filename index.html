@@ -17,7 +17,7 @@
     <label id="email-label">Email</label><br>
     <input type="email" name="" id="email" placeholder="Enter your email" required><br>
     <label id="number-label">Age(Optional)</label><br>
-    <input type="number" name="" id="number" placeholder="Enter your age" required><br>
+    <input type="number" name="" id="number" placeholder="Enter your age" required  min="0" max = "200"><br>
     <label>Which option best describe your current role?</label><br>
     <select name="dropdown" name="Select Current role">
     
@@ -30,13 +30,13 @@
       <option value="Student">Other</option>
     </select><br>
     <label >Would you recommend freecodecamp to a friend ?</label><br>
-    <input type="radio" name="radio-buttons" id="">Definitely
+    <input type="radio" name="radio-buttons" value="Definitely">Definitely
     <br>
-    <input type="radio" name="radio-buttons" id="">Maybe
+    <input type="radio" name="radio-buttons" value="Maybe">Maybe
     <br>
-    <input type="radio" name="radio-buttons" id="">Not sure
+    <input type="radio" name="radio-buttons" value="Not sure">Not sure
     <label for="">What is your favorite feature of freecodecamp?</label><br>
-    <select name="dropdown" name="Select Current role">
+    <select id="dropdown" name="Select Current role">
     
 
       <option disabled selected value>Select an option</option>
@@ -44,19 +44,23 @@
       <option value="Projects">Projects</option>
       <option value="Community">Community</option>
       <option value="Open source">Open source</option>
+    </select>
 
       <label >What would you like to see improved? (Check all that apply)</label>
-      <input type="checkbox" name="" id="">Front-end Projects
+      <input type="checkbox" name="" value="Front-end Projects">Front-end Projects
       <br>
-      <input type="checkbox" name="" id="">Back-end Projects
+      <input type="checkbox" name="" value="Back-end Projects">Back-end Projects
       <br>
-      <input type="checkbox" name="" id="">Data Visualization
+      <input type="checkbox" name="" value="Data Visualization">Data Visualization
       <br>
-      <input type="checkbox" name="" id="">Open Source Community
+      <input type="checkbox" name="" value="Open Source Community">Open Source Community
       <br>
-      <input type="checkbox" name="" id="">Gitter help rooms
+      <input type="checkbox" name="" value="Gitter help rooms">Gitter help rooms
       
-    </select><br>
+    <br>
+    <label >Any comments or suggestions?</label><br>
+    <textarea placeholder="Enter your comment here" name="" id="" cols="30" rows="10"></textarea><br>
+    <button type="submit" id="submit">Submit</button>
     
 
   </form>
